@@ -1,0 +1,128 @@
+html {
+    height: 100vh;
+    font-size: 13px;
+}
+
+body {
+    height: 100%;
+    outline: 1px solid blue;
+    margin: 0;
+}
+
+main {
+    height: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h3 {
+    color: hsl(234, 12%, 34%);
+    margin: 0;
+    font-size: 1.78vh;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+    margin: 0;
+    font-size: 1.5vh;
+}
+
+.header p {
+    font-size: 1.5rem;
+}
+
+.header-layout {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.card-layout {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container-1,
+.card-container-3 {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container-1 {
+    justify-content: flex-end;
+}
+
+.card-container-3 {
+    justify-content: flex-start;
+}
+
+.card-container-2 {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card {
+    height: 90%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 1px 5px 15px lightgray;
+}
+
+.card-container-2 > .card {
+    height: 45%;
+}
+
+.card-content {
+    height: 60%;
+}
+
+.card-image {
+    height: 40%;
+    text-align: right;
+}
+
+img {
+    width: 45px;
+    height: 45px;
+}
+
+.supervisor {
+    border-top: 2px solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
+    border-top: 2px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: 2px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: 2px solid hsl(212, 86%, 64%);
+}
