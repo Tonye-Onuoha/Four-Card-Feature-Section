@@ -1,12 +1,12 @@
 html {
     height: 100vh;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 body {
     height: 100%;
-    outline: 1px solid blue;
     margin: 0;
+    background-color: hsl(0, 0%, 98%);
 }
 
 main {
@@ -42,11 +42,19 @@ h3 {
 p {
     color: hsl(229, 6%, 66%);
     margin: 0;
-    font-size: 1.5vh;
+    font-size: 1.3vh;
 }
 
 .header p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.highlight {
+    color: hsl(234, 12%, 34%);
+}
+
+.about-us {
+    font-size: 1.4vh;
 }
 
 .header-layout {
@@ -59,8 +67,6 @@ p {
 
 .card-layout {
     height: 80%;
-    display: flex;
-    flex-direction: column;
 }
 
 .card-container-1,
@@ -87,7 +93,7 @@ p {
 
 .card {
     height: 90%;
-    padding: 1em;
+    padding: 1.2em;
     box-sizing: border-box;
     border-radius: 5px;
     box-shadow: 1px 5px 15px lightgray;
@@ -107,8 +113,8 @@ p {
 }
 
 img {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
 }
 
 .supervisor {
@@ -125,4 +131,99 @@ img {
 
 .calculator {
     border-top: 2px solid hsl(212, 86%, 64%);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 640px) {
+    main {
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        max-width: 75%;
+    }
+    .header p {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2vw;
+    }
+    p {
+        font-size: 0.85vw;
+    }
+    .about-us {
+        font-size: 0.95vw;
+    }
+    .card-layout {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .card-container-1,
+    .card-container-2,
+    .card-container-3 {
+        height: 100%;
+        flex-basis: 33.33%;
+    }
+    .card-container-1,
+    .card-container-3 {
+        justify-content: center;
+    }
+    .card-container-2 {
+        justify-content: center;
+        gap: 20px;
+    }
+    .card,
+    .card-container-2 > .card {
+        height: 30%;
+    }
+    img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header p {
+        font-size: 1.8rem;
+    }
+    .card,
+    .card-container-2 > .card {
+        height: 35%;
+    }
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header p {
+        font-size: 1.85rem;
+    }
+    .card,
+    .card-container-2 > .card {
+        height: 40%;
+    }
+    img {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .header p {
+        font-size: 1.9rem;
+    }
+    .card,
+    .card-container-2 > .card {
+        height: 45%;
+    }
+    img {
+        width: 64px;
+        height: 64px;
+    }
 }
